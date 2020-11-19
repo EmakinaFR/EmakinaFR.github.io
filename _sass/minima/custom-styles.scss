@@ -1,0 +1,334 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+body {
+  font-weight: lighter;
+  color: $color--white;
+  line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $title-color;
+}
+
+a {
+  color: $color--primary;
+  transition: all .2s ease-in-out;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: $color--white;
+  }
+}
+
+.site-header {
+  border-top: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background: $color--primary;
+  color: $color--white;
+
+  .page-link {
+    color: $color--white;
+  }
+
+  .site-title {
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    span {
+      display: block;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .25em
+    }
+  }
+
+  a {
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.page-content {
+  position: relative;
+}
+
+.post {
+
+  &-list-heading {
+    margin: 100px 0 60px;
+    font-size: 2.625rem;
+  }
+
+  &-preview {
+    display: flex;
+    align-items: flex-start;
+
+    h3 {
+      margin-top: 0;
+    }
+
+    img {
+      width: 250px;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    p {
+      line-height: 1.4;
+    }
+  }
+
+  &-meta {
+    color: $color--primary;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  h1 {
+    margin-top: 100px;
+  }
+
+  img {
+    margin-bottom: 30px;
+  }
+
+  blockquote {
+    margin: 30px 0;
+    border-color: $color--primary;
+    color: lighten($color--primary, 35%);
+    font-weight: lighter;
+    font-size: 1.4em;
+    border-width: 2px;
+    padding: 15px;
+  }
+}
+
+.author {
+  margin: 50px 0 20px;
+  padding-top: 50px;
+  border-top: 1px solid $brand-color-dark;
+  display: flex;
+
+  img {
+
+    border-radius: 50%;
+    min-width: 100px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  p {
+    span {
+      text-transform: uppercase;
+      display: block;
+      color: $color--primary;
+      font-weight: normal;
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.container__404 {
+  background: url(/assets/image/omar-prestwich-0HAPFlyy9o4-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &__content {
+    align-items: center;
+    text-align: left;
+    text-transform: uppercase;
+
+    span {
+      position: relative;
+      font-weight: bold;
+      z-index: 1;
+
+      &::after {
+        display: block;
+        -webkit-text-stroke: 2px $color--white;
+        z-index: -1;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 100%;
+        color: transparent;
+        content: attr(data-text);
+        opacity: .3;
+        transition: all .2s ease-in-out;
+      }
+    }
+
+    div {
+      margin: -5px 0 0 20px;
+
+      a {
+        line-height: 1.2;
+        margin-top: 10px;
+        display: block;
+        color: $color--white;
+        font-weight: bold;
+        font-size: 30px;
+
+        span {
+          &::after {
+            -webkit-text-stroke: 1.5px $color--white;
+            top: 4px;
+            left: 4px;
+          }
+        }
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+
+          span {
+            &::after {
+              -webkit-text-stroke: 1.5px $color--primary;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 12vh;
+      line-height: 1.2;
+    }
+  }
+}
+
+.site-footer {
+  margin-top: 50px;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &:after {
+      display: none;
+    }
+
+    div {
+      &:first-child {
+        max-width: 230px;
+        font-size: 11px;
+      }
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    p {
+      font-size: 11px;
+    }
+
+    .feed-subscribe a {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-end;
+      color: $color--primary;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      &:hover {
+        color: $color--white;
+      }
+
+      .svg-icon {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.social-media-list {
+  li {
+    a {
+      border: none;
+      padding: 0;
+    }
+
+    .svg-icon {
+      fill: $color--primary;
+      padding: 0;
+      margin: 0 0 20px 20px;
+      transform: scale(1.4);
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        fill: $color--white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .author {
+    flex-direction: column;
+    text-align: center;
+
+    img {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+
+  .post {
+    &-preview {
+      flex-direction: column;
+
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .site-footer {
+    .wrapper {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      div {
+        text-align: center;
+      }
+    }
+  }
+
+  .social-media-list {
+    li:first-child {
+      a {
+        svg {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

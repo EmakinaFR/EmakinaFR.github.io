@@ -1,0 +1,23 @@
+<article class="post-preview {{ include.name }}">
+  {% if post.banner %}{% include image.liquid image=post.banner alt=post.banner-alt %}{% endif %}
+  <div class="post-content">
+    <h3 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+    <div class="post-meta">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ post.date | date: date_format }}
+      </time>
+      {%- if post.author -%}
+        • {% for author in post.author %}
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span class="p-author h-card" itemprop="name">{{ author }}</span>
+          </span>
+          {%- if forloop.last == false %}, {% endif -%}
+        {% endfor %}
+      {%- endif -%}
+      </div>
+    {%- if site.show_excerpts -%}
+      {{ post.excerpt }}
+    {%- endif -%}
+ </div>
+</article>
