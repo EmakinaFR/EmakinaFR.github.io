@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{%- if page.title -%}
+<h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%}
+
+{{ content }}
+
+{% if site.paginate %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "👉 Nos aventures" }}</h2>
+  <ul class="post-list">
+    {%- for post in site.posts -%}
+    <li>
+      {% include preview.liquid %}
+    </li>
+    {%- endfor -%}
+  </ul>
+
+  {% if site.paginate %}
+    <div class="pager">
+      <ul class="pagination">
+        {%- if paginator.previous_page %}
+        <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
+        {%- else %}
+        <li><div class="pager-edge">•</div></li>
+        {%- endif %}
+        <li><div class="current-page">{{ paginator.page }}</div></li>
+        {%- if paginator.next_page %}
+        <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
+        {%- else %}
+        <li><div class="pager-edge">•</div></li>
+        {%- endif %}
+      </ul>
+    </div>
+  {%- endif %}
+
+{% else %}
+    <h2 class="post-list-heading">{{ page.list_title | default: "👉 Nos aventures arrivent..." }}</h2>
+{%- endif -%}
+

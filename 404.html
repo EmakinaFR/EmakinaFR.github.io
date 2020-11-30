@@ -2,24 +2,13 @@
 permalink: /404.html
 layout: default
 ---
-
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<div class="container container__404">
+  <div class="container__404__content">
+    <h1><span data-text="Oups">Oups</span></h1>
+    <div>
+      <p class="strong">Il n'y a personne ici !</p>
+      <p>Pour retourner à l'accueil</p>
+      <a href="{{site.baseurl}}/"> <span data-text="C'est par là !">C'est par là !</span></a>
+    </div>
+  </div>
 </div>
