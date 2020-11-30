@@ -4,9 +4,9 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-      {{ site.title | escape }}
-      <span>{{ site.baseline | escape }}</span>
+    <img src="assets/image/emakina-logo.png" class="site-title site-title-img" alt="EMAKINA" />
+    <a class="site-title site-title-baseline" rel="author" href="{{ "/" | relative_url }}">
+      {{ site.baseline | escape }}
     </a>
 
     {%- if titles_size > 0 -%}
