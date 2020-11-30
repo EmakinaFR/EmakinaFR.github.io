@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Emakina.FR
+title: EMAKINA
 baseline: Blog technique
 copyright: Emakina ©
 description: Le blog où nos experts parlent de leur quotidien dans le monde du développement.
