@@ -15,9 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 
 title: EMAKINA
-baseline: Blog technique
-copyright: Emakina ©
-description: Le blog où nos experts parlent de leur quotidien dans le monde du développement.
+baseline: We Tech @emakina
+copyright: EMAKINA ©
+description: Nos experts vous partagent leur quotidien
 permalink: /:title:output_ext
 
 lang: fr
