@@ -2,25 +2,24 @@
   <data class="u-url" href="{{ '/' | relative_url }}"></data>
 
   <div class="wrapper">
+    <img src="../assets/image/emakina-logo.png" alt="EMAKINA"/>
     <div>
-      <p>{{ site.description | escape }}</p>
+      <div class="social-links">
+        <div>
+          {%- include social.html -%}
+        </div>
+        <p class="feed-subscribe">
+          <a href="{{ 'feed.xml' | relative_url }}">
+            <svg class="svg-icon orange">
+              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+            </svg>
+          </a>
+        </p>
+      </div>
       {%- if site.copyright %}
       <p class="copyright">{{ site.copyright }} {{ 'now' | date: "%Y" }}</p>
       {% endif %}
     </div>
 
-    <div>
-      <div class="social-links">
-        {%- include social.html -%}
-      </div>
-      <p class="feed-subscribe">
-        <a href="{{ 'feed.xml' | relative_url }}">
-          <svg class="svg-icon orange">
-            <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-          </svg>
-          <span>Abonnez-vous</span>
-        </a>
-      </p>
-    </div>
   </div>
 </footer>
