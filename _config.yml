@@ -22,7 +22,7 @@ permalink: /:title:output_ext
 
 lang: fr
 show_excerpts: true
-google_analytics: UA-NNNNNNNN-N   # TODO
+google_analytics: G-VWEG0X56VY
 timezone: Europe/Paris
 exclude:
   - .git/
