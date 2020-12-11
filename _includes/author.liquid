@@ -1,77 +1,80 @@
-{% case page.author %}
-  {% when "Alexandre Jardin" %}
-    {% assign github = "ajardin" %}
-    {% capture description %}
-      Alexandre travaille au développement d'applications Magento et Symfony depuis presque dix ans. Il aime accompagner
-      les équipes techniques en travaillant sur l'industrialisation et l'amélioration des performances.
-    {% endcapture %}
+{% assign authors = page.author | split: ", " %}
+{% for author in authors %}
+  {% case author %}
+    {% when "Alexandre Jardin" %}
+      {% assign github = "ajardin" %}
+      {% capture description %}
+        Alexandre travaille au développement d'applications Magento et Symfony depuis presque dix ans. Il aime accompagner
+        les équipes techniques en travaillant sur l'industrialisation et l'amélioration des performances.
+      {% endcapture %}
 
-  {% when "Chloé Avoustin" %}
-    {% assign github = "chloeavoustin" %}
-    {% capture description %}
-      Passionnée et mentor, Chloé est développeuse front-end sur des applications Magento et VueJS. Elle aime découvrir,
-      partager et créer en repoussant les limites technologique pour relever des défis qui semblent insurmontables.
-    {% endcapture %}
+    {% when "Chloé Avoustin" %}
+      {% assign github = "chloeavoustin" %}
+      {% capture description %}
+        Passionnée et mentor, Chloé est développeuse front-end sur des applications Magento et VueJS. Elle aime découvrir,
+        partager et créer en repoussant les limites technologique pour relever des défis qui semblent insurmontables.
+      {% endcapture %}
 
-  {% when "Florian Belmont" %}
-    {% assign github = "flobelmont" %}
-    {% capture description %}
-      Florian est développeur front-end. Passionné et volontaire, il aime partager avec les équipes qui l'entourent
-      autour d'un délicieux smoothie !
-    {% endcapture %}
+    {% when "Florian Belmont" %}
+      {% assign github = "flobelmont" %}
+      {% capture description %}
+        Florian est développeur front-end. Passionné et volontaire, il aime partager avec les équipes qui l'entourent
+        autour d'un délicieux smoothie !
+      {% endcapture %}
 
-  {% when "Gaëtan Moneger" %}
-    {% assign github = "GMoneger" %}
-    {% capture description %}
-      Gaëtan est un développeur back-end spécialisé en Drupal et Symfony qui vit selon trois règles : café-clope-dev.
-      Passionné par Pokemon, son chat s'appelle Léviator.
-    {% endcapture %}
+    {% when "Gaëtan Moneger" %}
+      {% assign github = "GMoneger" %}
+      {% capture description %}
+        Gaëtan est un développeur back-end spécialisé en Drupal et Symfony qui vit selon trois règles : café-clope-dev.
+        Passionné par Pokemon, son chat s'appelle Léviator.
+      {% endcapture %}
 
-  {% when "Julien Hochgenug" %}
-    {% assign github = "hochgenug" %}
-    {% capture description %}
-      Collectionneur d'elePHPants à ses heures perdues, Julien s'est spécialisé sur Magento et s'occupe de la gestion
-      des formations en interne.
-    {% endcapture %}
+    {% when "Julien Hochgenug" %}
+      {% assign github = "hochgenug" %}
+      {% capture description %}
+        Collectionneur d'elePHPants à ses heures perdues, Julien s'est spécialisé sur Magento et s'occupe de la gestion
+        des formations en interne.
+      {% endcapture %}
 
-  {% when "Matthieu Petel" %}
-    {% assign github = "matthieupetel" %}
-    {% capture description %}
-      Matthieu est un développeur front-end passionné autant par le monde merveilleux du CSS que la puissance des
-      frameworks. Il aime aussi la qualité et la maintenabilité du code, partager ses connaissances, les chats et le
-      café sans sucre.
-    {% endcapture %}
+    {% when "Matthieu Petel" %}
+      {% assign github = "matthieupetel" %}
+      {% capture description %}
+        Matthieu est un développeur front-end passionné autant par le monde merveilleux du CSS que la puissance des
+        frameworks. Il aime aussi la qualité et la maintenabilité du code, partager ses connaissances, les chats et le
+        café sans sucre.
+      {% endcapture %}
 
-  {% when "Lauriane Debord" %}
-    {% assign github = "djino87" %}
-    {% capture description %}
-      Lauriane est une développeuse back-end spécialisée en Magento 2. Elle aime les défis techniques et découvrir de
-      nouvelles choses.
-    {% endcapture %}
+    {% when "Lauriane Debord" %}
+      {% assign github = "djino87" %}
+      {% capture description %}
+        Lauriane est une développeuse back-end spécialisée en Magento 2. Elle aime les défis techniques et découvrir de
+        nouvelles choses.
+      {% endcapture %}
 
-  {% when "Lucas Mignot" %}
-    {% assign github = "mignotl" %}
-    {% capture description %}
-      Lucas est un développeur front-end spécialisé en Drupal et VueJS. La qualité du code lui tient autant à coeur que
-      la qualité du rendu. Il aime aussi participer aux phases de conception, découvrir de nouvelles choses et partager
-      ses connaissances.
-    {% endcapture %}
+    {% when "Lucas Mignot" %}
+      {% assign github = "mignotl" %}
+      {% capture description %}
+        Lucas est un développeur front-end spécialisé en Drupal et VueJS. La qualité du code lui tient autant à coeur que
+        la qualité du rendu. Il aime aussi participer aux phases de conception, découvrir de nouvelles choses et partager
+        ses connaissances.
+      {% endcapture %}
 
-  {% when "Nicolas Fabre" %}
-    {% assign github = "nfabre" %}
-    {% capture description %}
-      404 - description not found
-    {% endcapture %}
+    {% when "Nicolas Fabre" %}
+      {% assign github = "nfabre" %}
+      {% capture description %}
+        404 - description not found
+      {% endcapture %}
 
-  {% when "Thibault Desmoulins" %}
-    {% assign github = "akiavara" %}
-    {% capture description %}
-      Développeur passionné, Thibault s'est intéressé à la programmation le jour où il a compris que son ordinateur
-      pouvait être allumé pour lancer autre chose que Counter Strike et MSN, en 2006.
-    {% endcapture %}
-{% endcase %}
+    {% when "Thibault Desmoulins" %}
+      {% assign github = "akiavara" %}
+      {% capture description %}
+        Développeur passionné, Thibault s'est intéressé à la programmation le jour où il a compris que son ordinateur
+        pouvait être allumé pour lancer autre chose que Counter Strike et MSN, en 2006.
+      {% endcapture %}
+  {% endcase %}
 
-<div class="author">
-  <div class="avatar">{% avatar {{ github }} size=100 %}</div>
-  <p class="description"><span>L'auteur</span>{{ description }}</div>
-</div>
+  <div class="author">
+    <div class="avatar">{% avatar user=github size=100 %}</div>
+    <p class="description"><span>L'auteur</span>{{ description }}</div>
+  </div>
+  {% endfor %}
