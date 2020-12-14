@@ -19,19 +19,20 @@ préoccupation.
 
 > Pour remédier à tout ça, avez-vous déjà pensé à instaurer des rituels dédiés uniquement aux développeurs ?
 
-Voici une proposition avec un principe simple : une séance hebdomadaire de 30 minutes, montre en main. Les sujets de
+Voici une proposition avec un principe simple : un meeting hebdomadaire de 30 minutes, montre en main. Les sujets de
 discussions doivent se concentrer uniquement sur de la conception de code et sur les pratiques communes à appliquer.
 
 ## 👉 Les 3 règles à suivre :
   - La conception doit rester inchangée.
-  - Le code doit rester ISO fonctionnel.
+  - Le code doit rester iso-fonctionnel. Les modifications du code ne doivent pas influer sur le comportement de la
+fonctionnalité.
   - Le code doit rester
-ISO bug. Si on rencontre des problèmes, on ne les corrige pas directement et on crée un ticket pour le résoudre plus
+iso-bug. Si on rencontre des problèmes, on ne les corrige pas directement et on crée un ticket pour le résoudre plus
 tard.
 On peut rajouter une notation `/* FIXME */` dans le code.
 
 ## 👀 Comment cela se passe concrètement :
-  - Un présentateur est désigné pour` la séance, il faut que ça tourne chaque semaine.
+  - Un présentateur est désigné pour la séance, il faut que ça tourne chaque semaine.
   - Le présentateur projette aux autres développeurs le code sélectionné préalablement. Le mieux est d’avoir une petite
 liste où l’on peut indiquer des parties de code à analyser afin de venir piocher les idées pendant la réunion.
   - Les développeurs doivent donner leurs avis sur le code présenté et se mettre d’accord sur les pratiques communes à
