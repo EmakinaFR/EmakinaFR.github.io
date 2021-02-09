@@ -2,7 +2,7 @@
 layout: post
 title: Refacthon
 author: Chloé Avoustin, Julien Hochgenug
-banner: /vlad-hilitanu-1FI2QAYPa-Y-unsplash.jpg
+banner: banner-post-refacthon-introduction.jpg
 categories: Développement
 ---
 Savoir coder, c’est bien. Bien communiquer, transmettre de la connaissance et partager les mêmes valeurs que les autres

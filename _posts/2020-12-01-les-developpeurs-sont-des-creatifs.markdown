@@ -2,7 +2,7 @@
 layout: post
 title: Et si les développeurs étaient des créatifs...
 author: Chloé Avoustin
-banner: /dayne-topkin-y5_mFlLMwJk-unsplash.jpg
+banner: banner-post-developers-are-creatives.jpg
 categories: Développement
 ---
 Le métier de développeur est un métier en constante évolution, c'est sa plus grande force
