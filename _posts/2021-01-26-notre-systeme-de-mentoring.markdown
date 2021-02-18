@@ -53,7 +53,7 @@ Ma candidature est partie le soir-même et moins d'une semaine après, j'étais 
 
 ### Quel est ton parcours ?
 
-Il est un peu atypique puisque je ne suis pas passé par une école d'ingénieur comme c'est le cas pour beaucoup de monde aujourd'hui. Après une orientation par défaut lors de mes années collèges et lycées, je me suis lancé sur le marché du travail avec un simple BTS mais avec la certitude de reprendre mes études un jour pour être diplômé dans l'informatique. C'est ce que j'ai fait en 2006 en suivant pendant un an une formation de développeur à l'AFPA de Limoges. Le hasard fait que j'ai d'ailleurs passé toute cette formation avec Michaël de Cadaran, et j'ai été très surpris de le retrouver ici lors de mon premier jour.
+Il est un peu atypique puisque je ne suis pas passé par une école d'ingénieur comme c'est le cas pour beaucoup de monde aujourd'hui. Après une orientation par défaut lors de mes années collège et lycée, je me suis lancé sur le marché du travail avec un simple BTS mais avec la certitude de reprendre mes études un jour pour être diplômé dans l'informatique. C'est ce que j'ai fait en 2006 en suivant pendant un an une formation de développeur à l'AFPA de Limoges. Le hasard fait que j'ai d'ailleurs passé toute cette formation avec Michaël de Cadaran, et j'ai été très surpris de le retrouver ici lors de mon premier jour.
 
 ### Comment s'est déroulée ton arrivée ?
 
