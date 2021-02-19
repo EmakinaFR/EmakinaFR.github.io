@@ -2,7 +2,7 @@
 layout: post
 title: Le mentoring à Emakina
 author: Thibault Desmoulins, Florian Belmont
-banner: /mentoring/photo-1454165804606-c3d57bc86b40.jpeg
+banner: mentoring/banner-post-mentoring.jpeg
 categories: Entreprise
 ---
 
