@@ -193,8 +193,30 @@ a {
     margin-top: 50px;
   }
 
+  h2 {
+    margin-top: 45px;
+  }
+
+  h3 {
+    margin-top: 40px;
+  }
+
   img {
     margin-bottom: 30px;
+  }
+
+  figure {
+    margin-bottom: 20px;
+
+    img {
+      margin: 10px auto 10px auto;
+    }
+
+    figcaption {
+      color: $color--grey;
+      font-style: italic;
+      text-align: center;
+    }
   }
 
   blockquote {
