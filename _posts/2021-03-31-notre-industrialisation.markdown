@@ -71,7 +71,7 @@ inconvénients majeurs.
 1. L'absence de cadre faisait que les environnements locaux n'étaient pas systématiquement en adéquation avec les
    environnements de production. Il n'était pas rare d'avoir de mauvaises surprises lors des déploiements, c'était
    l'époque du fameux "*ça marchait sur ma machine*".
-2. La durée d'installation des projets était directement liée aux connaissances de la personne en terme d'administration
+2. La durée d'installation des projets était directement liée aux connaissances de la personne en termes d'administration
    système. Tous les développeurs n'ayant pas forcément une sensibilité DevOps, l'exercice pouvait s'avérer complexe en
    fonction de l'architecture souhaitée.
 3. La cohabitation de divers environnements n'était pas possible. Or, nous travaillons sur de nombreux projets en
@@ -103,7 +103,7 @@ développements, nouvelles fonctionnalités ou correctifs, partent de cette bran
 celle-ci. Pour garantir l'intégrité de la branche principale, trois critères conditionnent l'intégration de nouveaux
 changements.
 
-1. Les changements effectués doivent être validés par nos tests automatisés, que nous verrons plus en détails dans la
+1. Les changements effectués doivent être validés par nos tests automatisés, que nous verrons plus en détail dans la
    thématique suivante.
 2. Plusieurs développeurs doivent les approuver, d'un point de vue technique via la revue de code.
 3. Le [product owner][product_owner] doit lui aussi les approuver, d'un point de vue fonctionnel via Jira.
@@ -126,10 +126,10 @@ nous avons établi quelques règles élémentaires.
 1. Tout le monde peut participer, ce n'est pas limité aux seuls membres de l'équipe projet.
 2. Un minimum de 2 approbations est demandé, **peu importe l'ancienneté ou l'expérience** de la personne qui soumet les
    changements.
-3. Les approbations provenant de l'auteur de la merge request, ou de ses co-auteurs, ne sont pas comptabilisés.
+3. Les approbations provenant de l'auteur de la merge request, ou de ses co-auteurs, ne sont pas comptabilisées.
 
 Au delà du fait que ce processus limite grandement le risque d'introduire de nouvelles régressions, c'est aussi un
-véritable vecteur de **partage de connaissances** qui ne se limite pas qu'à l'équipe projet. Il n'est pas rare de voir
+véritable vecteur de **partage de connaissances** qui ne se limite pas à l'équipe projet. Il n'est pas rare de voir
 s'ouvrir des discussions dans l'objectif de trouver la solution technique la plus adaptée pour répondre à une
 problématique business.
 
@@ -175,7 +175,7 @@ prioriser vos travaux, vous pouvez vous appuyer sur des méthodologies comme [Mo
 ### Tests automatisés
 
 Tous nos développements sont évalués par des tests automatisés basés sur des outils étant des références sur le marché.
-Cette automatisation permet d'offrir à nos équipes un **avis quasi-instantané** sur la qualité du code produit, mais
+Cette automatisation permet d'offrir à nos équipes un **avis quasi instantané** sur la qualité du code produit, mais
 elle ne remplace pas la revue de code. Elle permet notamment de diagnostiquer tous les problèmes relatifs aux standards
 de développement pour que les humains se concentrent sur le fond plutôt que sur la forme.
 
@@ -241,8 +241,8 @@ Dans un futur proche, nous comptons ajouter d'autres informations comme la versi
 ## Conclusion
 
 Je tenais à partager à travers ces quelques lignes un aperçu du chemin que nous avons parcouru ces dernières années. Si
-certains points on été abordé très rapidement, nous aurons l'occasion de rentrer plus dans les détails dans de prochains
-articles.
+certains points ont été abordés très rapidement, nous aurons l'occasion de rentrer plus dans les détails dans de
+prochains articles.
 
 Par ailleurs, beaucoup de choses ont déjà été accomplies, mais nous n'en avons pas terminé et nous poursuivons toujours
 cette démarche d'amélioration continue. De nombreux sujets méritent encore d'être partagés. À très bientôt !
