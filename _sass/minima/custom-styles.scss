@@ -23,6 +23,10 @@ a {
   }
 }
 
+[class*='language'] {
+  margin-top: 30px;
+}
+
 .page-content {
   position: relative;
 }
@@ -465,6 +469,7 @@ a {
 
   .social-links {
     margin: 10px 0;
+
     .social-media-list {
       li:first-child {
         a {
