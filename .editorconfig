@@ -8,6 +8,6 @@ indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.md]
+[{*.md, *.markdown}]
 max_line_length = 120
 trim_trailing_whitespace = false
